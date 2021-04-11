@@ -17,7 +17,8 @@ class Solution:
         i = j-1
 
         while i>=0 and j<N:
-            
+            #TBD
+            pass
         for index, value in enumerate(nums):
             nums[index] = value**2
         nums.sort()
