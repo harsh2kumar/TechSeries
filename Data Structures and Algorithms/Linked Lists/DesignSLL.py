@@ -35,6 +35,7 @@ class MyLinkedList(object):
         # invalid index
         # 0th index is the sentinel node, hence, it needs to be counted as invalid
         # if size of LL is 0 and user asks for 0th node, return invalid
+        # SLL is 0-indexed i.e. first node should start from 0
         if index < 0 or index >= self.size:
             return -1
         curr = self.head
