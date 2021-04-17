@@ -38,7 +38,7 @@ def main():
     head.next.next = Node(6)
     head.next.next.next = Node(4)
     head.next.next.next.next = Node(2)
-
+    print("Linked List: " + str(head))
     print("Reversed Linked List: " + str(reverse(head)))
 
     # double reversing of LL doesn't work
@@ -49,6 +49,7 @@ def main():
     head.next.next.next = Node(4)
     head.next.next.next.next = Node(2)
     head.next.next.next.next.next = Node(2)
+    print("Linked List: " + str(head))
     print("Reversed Linked List: " + str(reverse(head)))
 
 
