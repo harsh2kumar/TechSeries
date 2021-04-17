@@ -13,7 +13,7 @@ class MyLinkedList(object):
     TIME COMPLEXITY:
     get, addAtIndex, deleteAtIndex - O(K) where K is the value of index
     addAtHead - O(1)
-    addAtTail - O(n)
+    addAtTail - O(N), where N is the size of the list
 
     SPACE COMPLEXITY:
     O(1) for all operations
@@ -35,7 +35,7 @@ class MyLinkedList(object):
         # invalid index
         # 0th index is the sentinel node, hence, it needs to be counted as invalid
         # if size of LL is 0 and user asks for 0th node, return invalid
-        # SLL is 0-indexed i.e. first node should start from 0
+        # SLL is 0-indexed i.e. first node should start from 0, hence max_possible_index<self.size
         if index < 0 or index >= self.size:
             return -1
         curr = self.head
@@ -83,6 +83,7 @@ class MyLinkedList(object):
         Delete the index-th node in the linked list, if the index is valid.
         """
         # return if index>size of LL
+        # SLL is 0-indexed i.e. first node should start from 0, hence max_possible_index<self.size
         if index < 0 or index >= self.size:
             return
         pred_node = self.head
