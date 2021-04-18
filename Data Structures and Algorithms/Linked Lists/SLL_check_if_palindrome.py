@@ -1,6 +1,6 @@
 # Find whether given SLL is a palindrome
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/JERG3q0p912
-# Refer to hhttps://leetcode.com/explore/learn/card/linked-list/219/classic-problems/1209/
+# Refer to https://leetcode.com/explore/learn/card/linked-list/219/classic-problems/1209/
 # Solution https://leetcode.com/problems/palindrome-linked-list/
 
 class Node:
