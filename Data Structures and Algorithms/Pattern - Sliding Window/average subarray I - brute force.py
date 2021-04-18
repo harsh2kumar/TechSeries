@@ -1,7 +1,5 @@
 # Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/7D5NNZWQ8Wr
-# Leetcode https://leetcode.com/problems/maximum-average-subarray-i/
-# Solution https://leetcode.com/problems/maximum-average-subarray-i/solution/
 
 # Brute force version
 # Time Complexity O(N*K)
