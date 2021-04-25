@@ -1,5 +1,7 @@
 # Given an array, find the max subarray sum of all contiguous subarrays of size ‘K’ in it.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/7XMlMEQPnnQ
+# Leetcode https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+# Solution https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solution/
 # Time Complexity O(N)
 # Space Complexity O(1)
 
