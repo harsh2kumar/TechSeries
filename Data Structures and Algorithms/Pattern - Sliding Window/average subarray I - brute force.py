@@ -4,6 +4,8 @@
 # Brute force version
 # Time Complexity O(N*K)
 # Space Complexity O(ceil(N/K))
+
+
 def find_averages_of_subarrays(K, arr):
     result = []
     for i in range(len(arr)-K+1):
