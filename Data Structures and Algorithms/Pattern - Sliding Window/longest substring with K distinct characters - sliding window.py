@@ -1,4 +1,4 @@
-# Given an array, find the max subarray sum of all contiguous subarrays of size ‘K’ in it.
+# Given a string, find the longest substirng with atmost 'K' distinct characters.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/7XMlMEQPnnQ
 # Leetcode https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
 # Solution https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/solution/

@@ -1,4 +1,5 @@
 # Given two baskets, put maximum number of contiguous subarray fruits in each basket. The only restriction is that each basket can have only one type of fruit.
+# This question is an extension of - Given a string, find the longest substirng with atmost 'K' distinct characters, where K = 2
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/Bn2KLlOR0lQ
 # Leetcode https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
 # Solution https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/solution/
@@ -22,7 +23,7 @@ def longest_substring_with_k_distinct(fruits, k):
             window_start += 1
         window_len = max(window_len, window_end-window_start+1)
     return window_len
-    
+
 def main():
     print("Maximum number of fruits: " +
           str(fruits_into_baskets(['A', 'B', 'C', 'A', 'C'])))
