@@ -1,5 +1,7 @@
-# Given an array, find the max subarray sum of all contiguous subarrays of size ‘K’ in it.
+# Given an array, find the smallest subarray with a given Sum
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/7XMlMEQPnnQ
+# Leetcode https://leetcode.com/problems/minimum-size-subarray-sum/
+# Solution https://leetcode.com/problems/minimum-size-subarray-sum/solution/
 # Time Complexity O(N)
 # Space Complexity O(1)
 
