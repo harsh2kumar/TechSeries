@@ -1,7 +1,5 @@
 # Given an array, find the max subarray sum of all contiguous subarrays of size ‘K’ in it.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/JPKr0kqLGNP
-# Leetcode https://leetcode.com/problems/sliding-window-maximum/
-# Solution https://leetcode.com/problems/sliding-window-maximum/solution
 # Time Complexity O(N)
 # Space Complexity O(1)
 
