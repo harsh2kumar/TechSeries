@@ -20,7 +20,8 @@ def longest_substring_with_k_distinct(str1, k):
             if char_freq[left_char] == 0:
                 del char_freq[left_char]
             window_start += 1 # shrink the window
-            max_length = max(max_length, window_end-window_start+1) # calculate the max length of sliding window
+        # calculate the max length of sliding window
+        max_length = max(max_length, window_end-window_start+1) 
     return max_length
 
 
@@ -31,6 +32,8 @@ def main():
           str(longest_substring_with_k_distinct("araaci", 1)))
     print("Length of the longest substring: " +
           str(longest_substring_with_k_distinct("cbbebi", 3)))
+    print("Length of the longest substring: " +
+          str(longest_substring_with_k_distinct("abcd", 4)))
 
 
 main()
