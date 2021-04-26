@@ -3,7 +3,7 @@
 
 # Brute force version
 # Time Complexity O(N*K)
-# Space Complexity O(ceil(N/K))
+# Space Complexity O(1)
 
 
 def find_averages_of_subarrays(K, arr):
