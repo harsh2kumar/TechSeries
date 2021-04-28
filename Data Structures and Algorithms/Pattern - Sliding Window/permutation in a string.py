@@ -2,7 +2,7 @@
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/N0o9QnPLKNv
 # Leetcode https://leetcode.com/problems/permutation-in-string/
 # Solution https://leetcode.com/problems/permutation-in-string/solution/
-# Time Complexity O(N)
+# Time Complexity O(N+M)
 # Space Complexity O(M), where M is the number of distinct characters in given pattern
 
 
