@@ -1,4 +1,4 @@
-# Given an array, find the longest substring with distinct characters
+# Given a string, find the longest substring with distinct characters
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/YMzBx1gE5EO
 # Leetcode https://leetcode.com/problems/longest-substring-without-repeating-characters/
 # Solution https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/
