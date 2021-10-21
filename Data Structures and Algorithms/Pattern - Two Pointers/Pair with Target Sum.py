@@ -1,7 +1,9 @@
 # Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
 # Write a function to return the indices of the two numbers (i.e. the pair) such that they add up to the given target.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/xog6q15W9GP
+# Leetcode https://leetcode.com/problems/two-sum/
 # Leetcode https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+# Solution https://leetcode.com/problems/two-sum/solution/
 # Solution https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/solution/
 # Time Complexity The time complexity of the above algorithm will be O(N), where ‘N’ is the total number of elements in the given array.
 # Space Complexity The algorithm runs in constant space O(1).
