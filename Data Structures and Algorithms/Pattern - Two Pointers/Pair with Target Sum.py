@@ -8,7 +8,7 @@
 
 
 def pair_with_targetsum(arr, target_sum):
-    # using Binary Search like mechanism
+    # using Two-Pointer Search like mechanism
     # Since the array is sorted, 
     # we increase our left pointer if sum of our elements is less than target sum
     # we decrease our right pointer if sum of our elements is greater than target sum
