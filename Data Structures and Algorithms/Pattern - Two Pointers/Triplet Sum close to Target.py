@@ -20,6 +20,7 @@ def triplet_sum_close_to_target(arr, target_sum):
             if target_diff == 0:
                 return target_sum
             # the second part of the following 'if' is to handle the smallest sum when we have more than one solution
+            # if target_diff=2 and smallest_diff=-2, we need to update smallest_diff to -2, since target_sum-smallest_diff will increase otherwise.
             # save the closest and the biggest difference
             elif (abs(target_diff)<abs(smallest_diff)) or (abs(target_diff)==abs(smallest_diff) and target_diff>smallest_diff):
                 smallest_diff = target_diff
