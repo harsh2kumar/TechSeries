@@ -5,7 +5,7 @@
 # Solution https://leetcode.com/problems/insert-interval/solution/
 # Time Complexity As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N),
 # where ‘N’ is the total number of intervals.
-# Space Complexity The space complexity of the above algorithm will be O(N)O(N) as we need to return a list containing all the merged intervals.
+# Space Complexity The space complexity of the above algorithm will be O(N) as we need to return a list containing all the merged intervals.
 
 
 def insert(intervals, new_interval):
