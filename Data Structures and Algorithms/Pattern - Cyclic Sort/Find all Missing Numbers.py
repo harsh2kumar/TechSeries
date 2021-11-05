@@ -1,8 +1,8 @@
 # We are given an unsorted array containing numbers taken from the range 1 to ‘n’. The array can have duplicates, which means some numbers will be missing.
 # Find all those missing numbers.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/Y52qNM0ljWK
-# Leetcode https://leetcode.com/problems/missing-number/
-# Solution https://leetcode.com/problems/missing-number/solution
+# Leetcode https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+# Solution https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/solution
 # Time Complexity The time complexity of the above algorithm is O(n).
 # Space Complexity The algorithm runs in constant space O(1).
 
