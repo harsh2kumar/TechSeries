@@ -1,5 +1,5 @@
-# We are given an unsorted array containing ‘n+1’ numbers taken from the range 1 to ‘n’. The array has only one duplicate but it can be repeated multiple times.
-# Find that duplicate number without using any extra space. You are, however, allowed to modify the input array.
+# We are given an unsorted array containing ‘n’ numbers taken from the range 1 to ‘n’. The array has some numbers appearing twice,
+# find all these duplicate numbers without using any extra space.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/RLw1Pjk1GQ0
 # Leetcode https://leetcode.com/problems/find-all-duplicates-in-an-array/
 # Solution https://leetcode.com/problems/find-all-duplicates-in-an-array/solution
