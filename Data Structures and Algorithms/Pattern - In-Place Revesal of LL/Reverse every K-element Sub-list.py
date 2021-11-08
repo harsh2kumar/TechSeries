@@ -24,6 +24,9 @@ class Node:
 
 
 def reverse_every_k_elements(head, k):
+    # optimization
+    if k <= 1 or not head:
+        return head
     current, prev = head, None
     i, length = 0, 0
     # reverse every k-group sub list
@@ -66,6 +69,9 @@ def reverse_every_k_elements(head, k):
 
 
 def reverse_every_k_elements_leetcode(head, k):
+    # optimization
+    if k <= 1 or not head:
+        return head
     current, prev = head, None
     i, length = 0, 0
     # calculate length of LL for Leetcode modification
