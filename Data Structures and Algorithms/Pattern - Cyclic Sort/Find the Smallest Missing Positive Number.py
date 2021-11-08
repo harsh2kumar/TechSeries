@@ -10,7 +10,7 @@ def find_first_smallest_missing_positive(nums):
     i, n = 0, len(nums)
     while i < len(nums):
         j = nums[i]-1
-        if nums[i]>0 and nums[i]<=n and nums[i] != nums[j]: # swap
+        if nums[i] > 0 and nums[i] <= n and nums[i] != nums[j]:  # swap
             nums[i], nums[j] = nums[j], nums[i]
         else:
             i += 1
@@ -22,9 +22,9 @@ def find_first_smallest_missing_positive(nums):
 
 
 def main():
-  print(find_first_smallest_missing_positive([-3, 1, 5, 4, 2]))
-  print(find_first_smallest_missing_positive([3, -2, 0, 1, 2]))
-  print(find_first_smallest_missing_positive([3, 2, 5, 1]))
+    print(find_first_smallest_missing_positive([-3, 1, 5, 4, 2]))
+    print(find_first_smallest_missing_positive([3, -2, 0, 1, 2]))
+    print(find_first_smallest_missing_positive([3, 2, 5, 1]))
 
 
 main()
