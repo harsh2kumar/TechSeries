@@ -2,8 +2,8 @@
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/3wENz1N4WW9
 # Leetcode https://leetcode.com/problems/reverse-linked-list/
 # Solution https://leetcode.com/problems/reverse-linked-list/solution/
-# Time Complexity: The time complexity of our algorithm will be O(N)O(N) where ‘N’ is the total number of nodes in the LinkedList.
-# Space Complexity: We only used constant space, therefore, the space complexity of our algorithm is O(1)O(1).
+# Time Complexity: The time complexity of our algorithm will be O(N) where ‘N’ is the total number of nodes in the LinkedList.
+# Space Complexity: We only used constant space, therefore, the space complexity of our algorithm is O(1).
 
 from __future__ import print_function
 
