@@ -43,6 +43,7 @@ def reverse_sub_list(head, p, q):
         current.next = prev
         prev = current
         current = next
+        i += 1
 
     # connect with first part
     # assign next for last node of first part to reversed sub-list
@@ -57,7 +58,7 @@ def reverse_sub_list(head, p, q):
     # assign last node of sub list
     # connect with last part
     if last_node_of_sub_list:
-        last_node_of_sub_list = current
+        last_node_of_sub_list.next = current
     return head
 
 
