@@ -27,7 +27,7 @@ def find_level_averages(root):
         level_size = len(queue)
         current_level = 0
         for _ in range(level_size):
-            # pop left node
+            # pop left node from queue
             current_node = queue.popleft()
             current_level += current_node.val
             # add child nodes if they exist
