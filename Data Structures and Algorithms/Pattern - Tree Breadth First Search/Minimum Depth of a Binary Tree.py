@@ -29,6 +29,7 @@ def find_minimum_depth(root):
         for _ in range(level_size):
             # pop left node from queue
             current_node = queue.popleft()
+            # if any leaf node is encountered, return min_tree_depth
             if not current_node.left and not current_node.right:
                 return min_tree_depth
             # add child nodes if they exist
