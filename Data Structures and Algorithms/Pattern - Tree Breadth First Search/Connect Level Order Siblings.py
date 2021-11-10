@@ -1,7 +1,11 @@
 # Given a binary tree, connect each node with its level order successor. The last node of each level should point to a null node.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/m2YYxXDOJ03
+# Given a perfect binary tree, connect each node with its level order successor. The last node of each level should point to a null node.
 # Leetcode https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 # Solution https://leetcode.com/problems/populating-next-right-pointers-in-each-node/solution/
+# Given a binary tree, connect each node with its level order successor. The last node of each level should point to a null node.
+# Leetcode https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+# Solution https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/solution/
 # Time Complexity The time complexity of the above algorithm is O(N), where ‘N’ is the total number of nodes in the tree.
 # This is due to the fact that we traverse each node once.
 # Space Complexity The space complexity of the above algorithm will be O(N) as we need to return a list containing the level order traversal.
