@@ -25,7 +25,7 @@ def find_paths_recursive(current_node, current_path, all_paths):
     # add the current node to the path
     current_path.append(current_node.val)
 
-    # if the current node is a leaf and its value is equal to required_sum, save the current path
+    # if the current node is a leaf, save the current path
     if current_node.left is None and current_node.right is None:
         all_paths.append(list(current_path))
     else:
