@@ -7,7 +7,7 @@
 # To insert a number into a permutation of size ‘N’ will take O(N), which makes the overall time complexity of our algorithm O(N*N!).
 # Space Complexity All the additional space used by our algorithm is for the result list and the queue to store the intermediate permutations. If you see closely, at any
 # time, we don’t have more than N! permutations between the result list and the queue. Therefore the overall space complexity to store N! permutations each
-# containing N elements will be O(N*N!)O(N∗N!).
+# containing N elements will be O(N*N!).
 
 from collections import deque
 
