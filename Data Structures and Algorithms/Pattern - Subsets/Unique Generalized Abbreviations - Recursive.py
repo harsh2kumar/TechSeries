@@ -1,4 +1,4 @@
-# For a given number ‘N’, write a function to generate all combination of ‘N’ pairs of balanced parentheses.
+# Given a word, write a function to generate all of its unique generalized abbreviations.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/NEOZDEg5PlN
 # Leetcode https://leetcode.com/problems/generalized-abbreviation/
 # Solution https://leetcode.com/problems/generalized-abbreviation/solution/
