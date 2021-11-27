@@ -1,4 +1,4 @@
-# For a given number ‘N’, write a function to generate all combination of ‘N’ pairs of balanced parentheses.
+# Given a word, write a function to generate all of its unique generalized abbreviations.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/NEOZDEg5PlN
 # Leetcode https://leetcode.com/problems/generalized-abbreviation/
 # Solution https://leetcode.com/problems/generalized-abbreviation/solution/
@@ -29,7 +29,7 @@ def generate_generalized_abbreviation(word):
                 ab_word.string.append(str(ab_word.count))
             result.append("".join(ab_word.string))
         else:
-            # continue abbreviating
+            # continue abbreviating by incrementing the current abbreviation count
             abbreviation_queue.append(AbbreviatedWord(
                 list(ab_word.string), ab_word.start+1, ab_word.count+1))
             # restart abbreviating, add current abbreviation count to string value, increment start value
