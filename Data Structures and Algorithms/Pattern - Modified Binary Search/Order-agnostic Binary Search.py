@@ -3,7 +3,7 @@
 # the array, otherwise return -1.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/R8LzZQlj8lO
 # Leetcode https://leetcode.com/problems/binary-search/
-# Solution https://leetcode.com/problems/binary-search/
+# Solution https://leetcode.com/problems/binary-search/solution/
 # Time Complexity Since, we are reducing the search range by half at every step, this means that the time complexity of our algorithm will be O(logN)
 # where ‘N’ is the total elements in the given array.
 # Space Complexity The algorithm runs in constant space O(1).
