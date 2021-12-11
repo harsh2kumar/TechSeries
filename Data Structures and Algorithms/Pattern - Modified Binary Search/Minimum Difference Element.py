@@ -1,5 +1,5 @@
-# Given an infinite sorted array (or an array with unknown size), find if a given number ‘key’ is present in the array.
-# Write a function to return the index of the ‘key’ if it is present in the array, otherwise return -1.
+# Given an array of numbers sorted in ascending order, find the element in the array that has the minimum difference 
+# with the given ‘key’.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/mymvP915LY9
 # Leetcode
 # Solution
