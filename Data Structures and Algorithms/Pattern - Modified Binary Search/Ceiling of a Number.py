@@ -2,8 +2,8 @@
 # element in the given array greater than or equal to the ‘key’.
 # Write a function to return the index of the ceiling of the ‘key’. If there isn’t any ceiling return -1.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/qA5wW7R8ox7
-# Leetcode
-# Solution
+# Leetcode https://leetcode.com/problems/search-insert-position/
+# Solution https://leetcode.com/problems/search-insert-position/solution/
 # Time Complexity Since, we are reducing the search range by half at every step, this means that the time complexity of our algorithm will be O(logN)
 # where ‘N’ is the total elements in the given array.
 # Space Complexity The algorithm runs in constant space O(1).
