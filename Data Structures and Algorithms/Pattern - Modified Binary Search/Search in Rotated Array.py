@@ -29,6 +29,8 @@ def search_rotated_array(arr, key):
                 start = mid+1
             else:
                 end = mid-1
+    # if element is not found in given array
+    return -1
 
 
 def main():
