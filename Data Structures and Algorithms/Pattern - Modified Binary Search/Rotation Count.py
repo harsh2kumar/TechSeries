@@ -9,7 +9,7 @@
 
 
 def count_rotations(arr):
-    # this question actually want us the find the minimum in array, total number of rotations is index of minimum element
+    # this question actually wants us the find the minimum in array, total number of rotations is index of minimum element
     start, end = 0, len(arr)-1
     while start <= end:
         mid = start+(end-start)//2
