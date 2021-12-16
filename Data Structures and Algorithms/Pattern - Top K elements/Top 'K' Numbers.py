@@ -9,12 +9,16 @@ from heapq import *
 
 def find_k_largest_numbers(nums, k):
     minheap = []
+    # put first 'K' numbers in the min heap
     for i in range(k):
         heappush(minheap, nums[i])
+    # go through the remaining numbers of the array, if the number from the array is bigger than the
+    # top(smallest) number of the min-heap, remove the top number from heap and add the number from array
     for i in range(k, len(nums)):
         if nums[i] > minheap[0]:
             heappop(minheap)
             heappush(minheap, nums[i])
+    # the heap has the top 'K' numbers, return them in a list
     return list(minheap)
 
 
