@@ -12,10 +12,10 @@ def find_least_distinct_elements(nums, k):
     # if number of elements to be removed is greater than length of array, return 0 as that'll the number of elements remaining
     if k > len(nums):
         return 0
-    distinct_ele_count = 0
     minheap = []
     # count frequency of elements
     ele_count = Counter(nums)
+    distinct_ele_count = len(ele_count)
     # insert in minheap elements
     for ele, freq in ele_count.items():
         heappush(minheap, (freq, ele))
@@ -26,7 +26,7 @@ def find_least_distinct_elements(nums, k):
         freq, ele = heappop(minheap)
         k -= freq
         if k >= 0:
-            distinct_ele_count += 1
+            distinct_ele_count -= 1
     return distinct_ele_count
 
 
