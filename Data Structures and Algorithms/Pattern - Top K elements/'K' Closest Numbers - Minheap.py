@@ -3,13 +3,15 @@
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/N8MJQNYyJPL
 # Leetcode https://leetcode.com/problems/find-k-closest-elements/
 # Solution https://leetcode.com/problems/find-k-closest-elements/solution/
-# Time Complexity The time complexity of the add() function will be O(logK) since we are inserting the new number in the heap.
-# Space Complexity The space complexity will be O(K) for storing numbers in the heap.
+# Time Complexity The time complexity of the above algorithm is O(logN + K). We need O(logN) for Binary Search and O(K) for finding the ‘K’ closest numbers
+# using the two pointers.
+# Space Complexity If we ignoring the space required for the output list, the algorithm runs in constant space O(1).
 from heapq import *
 
 
 def find_closest_elements(arr, K, X):
     index = binary_search(arr, X)
+    # the required K elements will be before/ after searched index
     low, high = index-K, index+K
 
     low = max(low, 0)  # 'low' should not be less than zero
