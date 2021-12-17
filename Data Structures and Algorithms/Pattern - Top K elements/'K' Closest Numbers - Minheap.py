@@ -19,6 +19,7 @@ def find_closest_elements(arr, K, X):
     high = min(high, len(arr) - 1)
 
     minheap = []
+    # We don't use maxheap to define upper limit of elements stored, since we need to calculate based on absolute value
     # add all candidate elements to the min heap, sorted by their absolute difference from 'X'
     for i in range(low, high+1):
         heappush(minheap, (abs(arr[i]-X), arr[i]))
