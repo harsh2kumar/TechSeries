@@ -1,4 +1,4 @@
-# Given ‘M’ sorted arrays, find the K’th smallest number among all the arrays.
+# Given ‘M’ sorted arrays, find the median number among all arrays.
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/myAqDMyRXn3
 # Leetcode https://leetcode.com/problems/merge-k-sorted-lists/
 # Solution https://leetcode.com/problems/merge-k-sorted-lists/solution/
@@ -18,7 +18,7 @@ def find_Kth_smallest(lists, k):
     # put the 1st element of each list in the min heap
     for sublist in lists:
         heappush(minheap, (sublist[0], 0, sublist))
-    # take the smallest(top) element form the min heap, if the running count is equal to k return the number
+    # take the smallest(top) element form the min heap
     while minheap:
         ele, i, sublist = heappop(minheap)
         numcount += 1
