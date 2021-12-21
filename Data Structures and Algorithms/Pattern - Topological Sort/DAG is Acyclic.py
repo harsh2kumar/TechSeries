@@ -1,5 +1,5 @@
-# Given a directed graph, find the topological ordering of its vertices.
-# Grokking https://www.educative.io/courses/grokking-the-coding-interview/m25rBmwLV00
+# Given a directed graph, find if it is acyclic.
+# Grokking https://www.educative.io/courses/grokking-the-coding-interview/m25rBmwLV00#Similar-Problems
 # Leetcode
 # Solution
 # Time Complexity The time complexity of the above algorithm will be O(V+E), where ‘V’ is the total number of vertices and ‘E’ is the total number of edges in the graph.
