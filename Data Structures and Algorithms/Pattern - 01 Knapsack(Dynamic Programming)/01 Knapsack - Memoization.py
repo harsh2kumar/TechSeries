@@ -3,12 +3,10 @@
 # Grokking https://www.educative.io/courses/grokking-the-coding-interview/gkZNLjV2kBk#Problem-Statement
 # Leetcode
 # Solution
-# Time Complexity he above algorithm’s time complexity is exponential O(2^n), where ‘n’ represents the total number of items.
-# This can also be confirmed from the above recursion tree. As we can see, we will have a total of ‘31’ recursive calls – calculated through (2^n) + (2^n) - 1,
-# which is asymptotically equivalent to O(2^n).
-# Space Complexity The space complexity is O(n). This space will be used to store the recursion stack. Since the recursive algorithm works in a depth-first fashion,
-# which means that we can’t have more than ‘n’ recursive calls on the call stack at any time.
-
+# Time CSince our memoization array dp[profits.length][capacity+1] stores the results for all subproblems, we can conclude that we will not have more than N*C subproblems
+# (where ‘N’ is the number of items and ‘C’ is the knapsack capacity). This means that our time complexity will be O(N*C).
+# Space Complexity The above algorithm will use O(N*C) space for the memoization array. Other than that, we will use O(N) space for the recursion call-stack.
+# So the total space complexity will be O(N*C + N), which is asymptotically equivalent to O(N*C).
 
 def solve_knapsack(profits, weights, capacity):
     # for every index and posibble capacities, populate a matrix
