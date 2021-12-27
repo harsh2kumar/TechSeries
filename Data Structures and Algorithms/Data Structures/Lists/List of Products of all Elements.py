@@ -3,7 +3,7 @@
 # Grokking https://www.educative.io/module/lesson/data-structures-in-python/7DxxOz72RO8
 # Leetcode https://leetcode.com/problems/product-of-array-except-self/
 # Solution https://leetcode.com/problems/product-of-array-except-self/solution/
-# Time Complexity Since this algorithm only traverses over the list twice, it’s in linear time, O(n)O(n).
+# Time Complexity Since this algorithm only traverses over the list twice, it’s in linear time, O(n).
 # Space Complexity The space complexity is O(1).
 
 
