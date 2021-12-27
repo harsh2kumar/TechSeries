@@ -9,12 +9,12 @@
 # Space Complexity The space complexity is O(n).
 
 # using reverse
-# Time Complexity Since this algorithm only traverses over the list twice, it’s in linear time, O(n).
+# Time Complexity Since this algorithm only traverses over the list once, it’s in linear time, O(n).
 # Space Complexity The space complexity is O(1).
 
-# using extra space
-# Time Complexity Since this algorithm only traverses over the list twice, it’s in linear time, O(n).
-# Space Complexity The space complexity is O(n).
+# using cyclic dependency
+# Time Complexity n elements are reversed a total of 3 times, it’s in linear time, O(n).
+# Space Complexity The space complexity is O(1).
 
 # using extra space
 def right_rotate_extra_space(lst, k):
