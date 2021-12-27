@@ -2,8 +2,9 @@
 # Grokking https://www.educative.io/module/lesson/data-structures-in-python/39Vv2YVxxVx
 # Leetcode
 # Solution
-# Time Complexity In the worst-case, the second list has all the elements that are smaller than the elements of the first list. In this case, the complexity will be O(mn)O(mn).
-# Space Complexity The space complexity is O(m).
+# Time Complexity In the worst-case, the second list has all the elements that are smaller than the elements of the first list. In this case, the complexity will 
+# be O(mn).
+# Space Complexity The space complexity is O(n+m).
 
 
 def merge_arrays(lst1, lst2):
