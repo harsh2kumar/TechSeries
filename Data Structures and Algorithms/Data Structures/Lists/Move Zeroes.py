@@ -5,7 +5,7 @@
 # Time Complexity The time complexity of O(N)
 # Space Complexity The space complexity is O(1).
 
-def moveZeroes(self, nums) -> None:
+def moveZeroes(nums):
     """
     Do not return anything, modify nums in-place instead.
     """
@@ -21,3 +21,8 @@ def moveZeroes(self, nums) -> None:
             nums[i], nums[last_non_zero_index] = nums[last_non_zero_index], nums[i]
             last_non_zero_index += 1
         i += 1
+
+    print(nums)
+
+
+moveZeroes([0, 1, 0, 3, 12])
