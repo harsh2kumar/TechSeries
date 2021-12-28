@@ -5,7 +5,7 @@
 # Time Complexity The time complexity of O(N)
 # Space Complexity The space complexity is O(1).
 
-def moveZeroes(self, nums: List[int]) -> None:
+def moveZeroes(self, nums) -> None:
     """
     Do not return anything, modify nums in-place instead.
     """
