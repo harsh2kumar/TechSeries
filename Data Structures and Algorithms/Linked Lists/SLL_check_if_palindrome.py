@@ -38,7 +38,7 @@ def is_palindromic_linked_list(head):
 
     # revert the reverse of the second half
     reverse(copy_head_reverse_second_half)
-
+    # we cannont have and condition here because head won't point to None
     if head is None or head_reverse_second_half is None:  # if both halves match
         return True
 
