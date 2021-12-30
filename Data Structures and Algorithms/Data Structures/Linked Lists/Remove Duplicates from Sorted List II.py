@@ -36,6 +36,7 @@ def remove_duplicates(lst):
         else:
             prev = prev.next_element
         cur = cur.next_element
+        lst.head_node = sentinel.next_element
     return lst
 
 
@@ -49,6 +50,16 @@ def main():
     lst.insert_at_head(2)
     lst.insert_at_head(1)
 
+    lst.print_list()
+    remove_duplicates(lst)
+    lst.print_list()
+
+    lst = LinkedList()
+    lst.insert_at_head(3)
+    lst.insert_at_head(2)
+    lst.insert_at_head(1)
+    lst.insert_at_head(1)
+    lst.insert_at_head(1)
     lst.print_list()
     remove_duplicates(lst)
     lst.print_list()
