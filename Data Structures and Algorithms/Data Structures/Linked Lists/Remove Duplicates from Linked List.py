@@ -1,4 +1,4 @@
-# Find whether given SLL has a cycle
+# Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
 # Grokking https://www.educative.io/module/lesson/data-structures-in-python/N0GQG1BnoqL
 # Refer to https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 # Solution https://leetcode.com/problems/remove-duplicates-from-sorted-list/solution/
