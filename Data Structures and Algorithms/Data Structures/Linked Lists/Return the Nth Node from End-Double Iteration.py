@@ -17,7 +17,7 @@ def find_nth(lst, n):
     # Find Length of list
     length = lst.length()
 
-    # Find the Node which is at (len - n + 1) position from start
+    # Find the Node which is at (len - n) position from start
     current_node = lst.get_head()
 
     position = length - n
