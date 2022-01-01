@@ -15,19 +15,19 @@ def find_nth(lst, n):
         return -1
 
     # Find Length of list
-    length = lst.length() - 1
+    length = lst.length()
 
     # Find the Node which is at (len - n + 1) position from start
     current_node = lst.get_head()
 
-    position = length - n + 1
+    position = length - n
 
     if position < 0 or position > length:
         return -1
 
-    count = 0
+    count = 1
 
-    while count is not position:
+    while count <= position:
         current_node = current_node.next_element
         count += 1
 
