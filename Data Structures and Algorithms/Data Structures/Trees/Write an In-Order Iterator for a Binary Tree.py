@@ -4,9 +4,8 @@
 # Leetcode https://leetcode.com/problems/binary-search-tree-iterator/
 # Solution https://leetcode.com/problems/binary-search-tree-iterator/solution/
 # Time Complexity The runtime complexity of this solution is linear, O(n).
-# Space Complexity The space complexity of this solution is O(h). The recursive solution has O(h) memory complexity as it will consume memory on
-# the stack up to the height of binary tree h. It will be O(log n) for a balanced tree and, in the worst case, can be O(n).
-
+# Space Complexity The space complexity of this solution is O(h). An iterative solution has O(h) memory complexity as it instantiates a stack
+# that has to store information up to the height of the binary tree (h). It will be O(logn) for a balanced tree and, in the worst case, can be O(n).
 
 from BinaryTree import *
 
