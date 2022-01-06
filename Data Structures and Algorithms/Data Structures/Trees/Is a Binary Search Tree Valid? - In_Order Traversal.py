@@ -4,7 +4,8 @@
 # Leetcode https://leetcode.com/problems/validate-binary-search-tree/
 # Solution https://leetcode.com/problems/validate-binary-search-tree/solution/
 # Time Complexity The runtime complexity of this solution is linear, O(n).
-# Space Complexity The memory complexity of this solution is linear, O(n).
+# Space Complexity The memory complexity of this solution is linear, O(h). Recursive solution has O(h) memory complexity as it will consume memory
+# on the stack up to the height of binary tree h. It will be O(log n) for a balanced tree and in the worst case can be O(n).
 
 from BinaryTree import *
 
