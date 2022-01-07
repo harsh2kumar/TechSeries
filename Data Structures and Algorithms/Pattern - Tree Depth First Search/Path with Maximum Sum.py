@@ -39,7 +39,7 @@ class MaximumPathSum:
         # similar to tree diameter
         # maximum sum of any path from the current node will be equal to the maximum of
         # the sums from left or right subtrees plus the value of the current node
-        return max(left_tree_path, right_tree_path)++current_node.val
+        return max(left_tree_path, right_tree_path)+current_node.val
 
 
 def main():
