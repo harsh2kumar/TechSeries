@@ -10,22 +10,23 @@ from BinaryTree import *
 
 
 def mirror_tree(root):
-  if root == None:
-    return
+    if root == None:
+        return
 
-  # We will do a post-order traversal of the binary tree.
-  if root.left != None:
-    mirror_tree(root.left)
+    # We will do a post-order traversal of the binary tree.
+    if root.left != None:
+        mirror_tree(root.left)
 
-  if root.right != None:
-    mirror_tree(root.right)
+    if root.right != None:
+        mirror_tree(root.right)
 
-  # Let's swap the left and right nodes at current level.
-  temp = root.left
-  root.left = root.right
-  root.right = temp
+    # Let's swap the left and right nodes at current level.
+    temp = root.left
+    root.left = root.right
+    root.right = temp
 
-arr = [20,50,200,75,25,300]
+
+arr = [20, 50, 200, 75, 25, 300]
 root = create_BST(arr)
 
 display_level_order(root)
