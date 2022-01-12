@@ -1,4 +1,4 @@
-# Given the root node of a binary tree, print the nodes that form the boundary (perimeter).
+# Serialize a binary tree to a file and then deserialize it back to a tree so that the original and the deserialized trees are identical.
 # Grokking https://www.educative.io/module/lesson/data-structures-in-python/m7rVmNVXkxE
 # Leetcode https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 # Solution https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solution/
