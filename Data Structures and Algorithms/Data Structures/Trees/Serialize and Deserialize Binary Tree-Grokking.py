@@ -1,7 +1,7 @@
 # Given the root node of a binary tree, print the nodes that form the boundary (perimeter).
-# Grokking https://www.educative.io/module/lesson/data-structures-in-python/JEv17NxrAZP
-# Leetcode https://leetcode.com/problems/boundary-of-binary-tree/
-# Solution https://leetcode.com/problems/boundary-of-binary-tree/solution/
+# Grokking https://www.educative.io/module/lesson/data-structures-in-python/m7rVmNVXkxE
+# Leetcode https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+# Solution https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solution/
 # Time Complexity The runtime complexity of this solution is linear, O(n).
 # Space Complexity The memory complexity of this solution is O(h). An iterative solution has O(h) memory complexity as it instantiates a stack
 # that has to store information up to the height of the binary tree (h). It will be O(logn) for a balanced tree and, in the worst case, can be O(n).
