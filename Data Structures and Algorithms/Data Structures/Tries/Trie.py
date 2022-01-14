@@ -1,4 +1,3 @@
-from os import curdir, device_encoding
 from TrieNode import TrieNode
 
 
