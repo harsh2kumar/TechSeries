@@ -122,8 +122,8 @@ class Trie:
             else:
                 deleted_self = False
         return deleted_self
-    # Function to delete given key from Trie
 
+    # Function to delete given key from Trie
     def delete(self, key):
         if self.root is None or key is None:
             print("None key or empty Trie error")
