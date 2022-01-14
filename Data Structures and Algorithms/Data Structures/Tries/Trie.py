@@ -43,7 +43,7 @@ class Trie:
         # Iterate over each letter in the key
         # If the letter doesn't exist, return False
         # If the letter exists, go down a level
-        # We will return true only if we reach the leafNode and
+        # We will return true only if we reach the leafNode/ end_of_word and
         # have traversed the Trie based on the length of the key
 
         for letter in key:
@@ -54,6 +54,21 @@ class Trie:
         if current is not None and current.is_end_word is True:
             return True
         return False
+
+    # Function to search for a word prefix
+    def startsWith(self, prefix: str) -> bool:
+        if not prefix:
+            return False
+        prefix = prefix.lower()
+        current = self.root
+
+        for letter in prefix:
+            index = self.get_index(letter)
+            if current.children[index] is None:
+                return False
+            current = current.children[index]
+        if current is not None:
+            return True
 
     # Recursive function to delete given key
     def delete_helper(self, key, current, length, level):
@@ -98,7 +113,7 @@ class Trie:
                 current.children[index] = None
 
                 # Case 3: word has common prefix
-                # if current is end word then
+                # if current is end word/ leaf node then
                 # current is part of another key
                 # so, we cannot delete this node and its parent path nodes
                 if current.is_end_word:
@@ -149,6 +164,15 @@ print("the --- " + res[1] if t.search("the") else "the --- " + res[0])
 print("these --- " + res[1] if t.search("these") else "these --- " + res[0])
 print("abc --- " + res[1] if t.search("abc") else "abc --- " + res[0])
 print("b --- " + res[1] if t.search("b") else "b --- " + res[0])
+
+# Search for prefixes
+print("\nPrefix the --- " + res[1] if t.search("the")
+      else "Prefix the --- " + res[0])
+print("Prefix these --- " +
+      res[1] if t.search("these") else "Prefix these --- " + res[0])
+print("Prefix abc --- " + res[1] if t.search("abc")
+      else "Prefix abc --- " + res[0])
+print("Prefix b --- " + res[1] if t.search("b") else "Prefix b --- " + res[0])
 
 # Delete abc
 t.delete("abc")
