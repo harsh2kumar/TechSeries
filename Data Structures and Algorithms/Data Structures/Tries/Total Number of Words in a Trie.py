@@ -1,10 +1,10 @@
-# There is a dictionary containing words from an alien language for which we don’t know the ordering of the alphabets. Write a method to find the correct order of
-# the alphabets in the alien language. It is given that the input is a valid dictionary and there exists an ordering among its alphabets.
-# Grokking https://www.educative.io/courses/grokking-the-coding-interview/R8AJWOMxw2q
-# Leetcode https://leetcode.com/problems/alien-dictionary/
-# Solution https://leetcode.com/problems/alien-dictionary/solution/
-# Time Complexity The time complexity of the above algorithm will be O(V+E), where ‘V’ is the total number of tasks and ‘E’ is the total number of prerequisites in the graph.
-# Space Complexity The space complexity will be O(V+E), since we are storing all of the prerequisites for each vertex in an adjacency list.
+# Implement the `total_words()` function which will find the total number of words in a trie.
+# Grokking https://www.educative.io/module/lesson/data-structures-in-python/YVnAYQAgNpK
+# Leetcode
+# Solution
+# Time Complexity For a trie with n number of nodes, the algorithm runs in O(n) because each node has to be traversed
+# Space Complexity If the length of the longest word is h, the worst-case space complexity is O(h). In the worst case, we have to look at h consecutive levels
+# of a trie for a character in the key being searched for. Thus, the stack will have h recursive calls.
 from Trie import Trie
 from TrieNode import TrieNode
 
