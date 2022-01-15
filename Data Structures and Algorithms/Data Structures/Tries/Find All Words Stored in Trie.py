@@ -1,5 +1,5 @@
 # You have to implement the find_words() function which will return a sorted list of all the words stored in a trie.
-# Grokking https://www.educative.io/module/lesson/data-structures-in-python/YVnAYQAgNpK
+# Grokking https://www.educative.io/module/lesson/data-structures-in-python/RLR54l13PLY
 # Leetcode
 # Solution
 # Time Complexity For a trie with n number of nodes, the algorithm runs in O(n) because each node has to be traversed
@@ -13,7 +13,9 @@ from TrieNode import TrieNode
 
 def find_words_rec(root, word, result):
     # return if root is None
-    if not root:
+    # check for None instead of [if not root]
+    # so that valid value of '0' is not missed
+    if root is None:
         return
     word.append(root.char)
     # add word if current character is marked as end_word
