@@ -17,10 +17,13 @@ def total_words(root):
     if root is None:
         return 0
     result = 0
+    # increment count if current character is marked as end_word
     if root.is_end_word:
         result += 1
     for child in root.children:
-        result += total_words(child)
+        # call recursively if child is not None
+        if child is not None:
+            result += total_words(child)
     return result
 
 
