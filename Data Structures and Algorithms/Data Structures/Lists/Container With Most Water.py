@@ -15,7 +15,11 @@ class Solution:
         water = 0
         left, right = 0, len(height)-1
         while left < right:
+            # volume is affected by height of pillars and distance between them
             water = max(water, (right-left)*min(height[left], height[right]))
+            # change height of smaller pillar as it will become a bottle neck
+            # distance betweem pillars will keep on reducing
+            # volume will increase based on pillar height
             if height[left] < height[right]:
                 left += 1
             else:
