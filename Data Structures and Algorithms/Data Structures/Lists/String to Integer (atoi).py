@@ -1,7 +1,7 @@
 # Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
 # Grokking
-# Leetcode https://leetcode.com/problems/move-zeroes/
-# Solution https://leetcode.com/problems/move-zeroes/solution/
+# Leetcode https://leetcode.com/problems/string-to-integer-atoi/
+# Solution https://leetcode.com/problems/string-to-integer-atoi/solution/
 # Time Complexity The time complexity of O(N)
 # Space Complexity The space complexity is O(1).
 
