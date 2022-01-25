@@ -13,9 +13,12 @@ class Solution:
     def intToRoman(self, num: int) -> str:
         roman_digits = []
         for symbol, val in self.values:
+            # break if num is zero
             if num == 0:
                 break
+            # find the number of times current symbol fits into num
             count, num = divmod(num, val)
+            # append count copies of symbol to result
             roman_digits.append(symbol*count)
         return "".join(roman_digits)
 
