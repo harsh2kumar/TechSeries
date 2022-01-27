@@ -8,13 +8,17 @@
 
 
 def find_product(lst):
-    # get product start from left
     left = 1
     product = []
+    # get product starting from left
+    # take product of all left elements
+    # at element i, store multiplication of 0..i-1
+    # multiply elements to the left of i
     for ele in lst:
         product.append(left)
         left = left * ele
     # get product starting from right
+    # multiply elements to the right of i
     right = 1
     for i in range(len(lst)-1, -1, -1):
         product[i] = product[i] * right
