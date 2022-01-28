@@ -29,6 +29,7 @@ class Node:
 class Solution:
     def mergeTwoLists_I(self, list1: Optional[Node], list2: Optional[Node]) -> Optional[Node]:
         # iterative soln
+        # maintain an unchanging reference to node ahead of the return node.
         sentinel = Node(-1)
 
         prev = sentinel
@@ -40,6 +41,8 @@ class Solution:
                 prev.next = list2
                 list2 = list2.next
             prev = prev.next
+        # At least one of list1 and list2 can still have nodes at this point, so connect
+        # the non-null list to the end of the merged list.
         prev.next = list1 if list1 else list2
 
         return sentinel.next
