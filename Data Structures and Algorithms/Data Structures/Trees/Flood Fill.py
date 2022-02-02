@@ -19,6 +19,8 @@ class Solution:
         return image
 
     def dfs(self, image, row, col, current_color, new_color):
+        # last if condition
+        # check if current image pixel is curr_color
         if row >= 0 and col >= 0 and row < len(image) and col < len(image[0]) and image[row][col] == current_color:
             image[row][col] = new_color
             self.dfs(image, row+1, col, current_color, new_color)
