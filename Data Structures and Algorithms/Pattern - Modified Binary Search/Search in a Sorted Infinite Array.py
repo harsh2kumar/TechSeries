@@ -26,9 +26,12 @@ def search_in_infinite_array(reader, key):
     # find the proper bounds first
     start, end = 0, 1
     while key > reader.get(end):
-        new_start = end+1
-        end = (end-start+1)*2
-        start = new_start
+        # new_start = end+1
+        # end = (end-start+1)*2
+        # start = new_start
+        start = end
+        end <<= 1
+            
     return binary_search(reader, start, end, key)
 
 
