@@ -4,8 +4,8 @@
 # If there is no next greater element, then the answer for this query is -1.
 # Return an array ans of length nums1.length such that ans[i] is the next greater element as described above.
 # Grokking https://www.educative.io/module/lesson/data-structures-in-python/JEP2nVGB4zv
-# Leetcode https://leetcode.com/problems/next-greater-element-i/
-# Solution https://leetcode.com/problems/next-greater-element-i/solution/
+# Leetcode https://leetcode.com/problems/min-stack/
+# Solution https://leetcode.com/problems/min-stack/solution/
 # Time Complexity Since this algorithm only traverses over the list once, it’s in linear time, O(n).
 # Space Complexity The space complexity is O(n) because we store all elements in our map.
 
