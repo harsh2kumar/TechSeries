@@ -1,9 +1,10 @@
-# Design a max stack data structure that supports the stack operations and supports finding the stack's maximum element.
+# Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
 # Grokking
-# Leetcode https://leetcode.com/problems/max-stack/
-# Solution https://leetcode.com/problems/max-stack/solution/
-# Time Complexity Since this algorithm only traverses over the list once, it’s in linear time, O(n).
-# Space Complexity The space complexity is O(n) because we store all elements in our map.
+# Leetcode https://leetcode.com/problems/lru-cache/
+# Solution https://leetcode.com/problems/lru-cache/solution/
+# Time Complexity O(1) both for put and get since all operations with ordered dictionary : get/in/set/move_to_end/popitem (get/containsKey/put/remove) are
+# done in a constant time.
+# Space Complexity O(capacity) since the space is used only for an ordered dictionary with at most capacity + 1 elements.
 
 from collections import OrderedDict
 
