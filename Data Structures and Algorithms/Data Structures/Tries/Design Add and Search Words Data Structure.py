@@ -1,7 +1,7 @@
 # Design a data structure that supports adding new words and finding if a string matches any previously added string.
 # Grokking
 # Leetcode https://leetcode.com/problems/design-add-and-search-words-data-structure/
-# Solution https://leetcode.com/problems/design-add-and-search-words-data-structure/
+# Solution https://leetcode.com/problems/design-add-and-search-words-data-structure/aolution/
 # Time Complexity O(M) to build the trie where M is total number of characters in products. For each prefix we find its representative node in O(len(prefix)) and dfs
 # to find at most 3 words which is an O(1) operation. Thus the overall complexity is dominated by the time required to build the trie.
 # Space Complexity O(26n)=O(n). Here n is the number of nodes in the trie. 26 is the alphabet size. Space required for output is O(m) where m is the length of the
