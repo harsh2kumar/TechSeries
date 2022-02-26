@@ -2,10 +2,9 @@
 # Grokking
 # Leetcode https://leetcode.com/problems/design-add-and-search-words-data-structure/
 # Solution https://leetcode.com/problems/design-add-and-search-words-data-structure/aolution/
-# Time Complexity O(M) to build the trie where M is total number of characters in products. For each prefix we find its representative node in O(len(prefix)) and dfs
-# to find at most 3 words which is an O(1) operation. Thus the overall complexity is dominated by the time required to build the trie.
-# Space Complexity O(26n)=O(n). Here n is the number of nodes in the trie. 26 is the alphabet size. Space required for output is O(m) where m is the length of the
-# search word.
+# Time Complexity O(M) for the "well-defined" words without dots, where MM is the key length, and NN is a number of keys, and O(N⋅26^M) for the "undefined" words.
+# That corresponds to the worst-case situation of searching an undefined word which is one character longer than all inserted keys.
+# Space Complexity O(1) for the search of "well-defined" words without dots, and up to O(M) for the "undefined" words, to keep the recursion stack.
 from typing import List
 
 
