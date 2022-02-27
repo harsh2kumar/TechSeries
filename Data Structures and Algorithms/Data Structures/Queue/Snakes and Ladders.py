@@ -3,8 +3,8 @@
 # Grokking
 # Leetcode https://leetcode.com/problems/rotting-oranges/
 # Solution https://leetcode.com/problems/rotting-oranges/solution/
-# Time Complexity O(N), where N is the size of the grid.
-# Space Complexity O(N), where N is the size of the grid.
+# Time Complexity O(N^2), where N is the size of the grid. We have to visit every node in worst case.
+# Space Complexity O(N^2), where N is the size of the grid. We have to store value of every square in our visited set in worst case.
 
 
 from collections import deque
