@@ -34,15 +34,16 @@ class Solution:
         zeros, ones = s.count("0"), 0
         # at the very minimum result would be equal to number zeros
         result = zeros
-        
+
         for char in s:
             if char == '0':
                 zeros -= 1
-                
+
             else:
                 ones += 1
             result = min(result, zeros+ones)
         return result
+
 
 sol = Solution()
 print("00110: ", sol.minFlipsMonoIncr("00110"))
