@@ -28,8 +28,27 @@ class Solution:
             # print("flip to 1:", flip, "flip zeros: ", zeros)
         return flip
 
+    def minFlipsMonoIncrEasy(self, s: str) -> int:
+        # num of zeros to flip to 1
+        # num of 1 to flip to 0
+        zeros, ones = s.count("0"), 0
+        # at the very minimum result would be equal to number zeros
+        result = zeros
+        
+        for char in s:
+            if char == '0':
+                zeros -= 1
+                
+            else:
+                ones += 1
+            result = min(result, zeros+ones)
+        return result
 
 sol = Solution()
 print("00110: ", sol.minFlipsMonoIncr("00110"))
 print("010110: ", sol.minFlipsMonoIncr("010110"))
 print("00011000: ", sol.minFlipsMonoIncr("00011000"))
+
+print("00110: ", sol.minFlipsMonoIncrEasy("00110"))
+print("010110: ", sol.minFlipsMonoIncrEasy("010110"))
+print("00011000: ", sol.minFlipsMonoIncrEasy("00011000"))
