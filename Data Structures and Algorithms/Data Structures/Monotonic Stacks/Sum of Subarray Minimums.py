@@ -11,23 +11,22 @@ from typing import List
 
 class Solution:
     def sumSubarrayMins(self, arr: List[int]) -> int:
+        stack = []
         result = 0
-        stack = [(-1, -1)]  # pair(index, element)
         arr.append(0)
-        # we will use monotonically increasing stack as we want to find
-        # next smaller element OR find in which subarrays is our current element
-        # a minimum
+        # we use monotonically increasing stack
         for i, ele in enumerate(arr):
-            # check if current element is less than TOS
-            # and violates monotonically increasing stack property
-            while len(stack) > 1 and ele < stack[-1][1]:
-                # pop element until the property is violated
+            while stack and (ele < stack[-1][1] or i == len(arr)-1):
                 index, num = stack.pop()
                 # left length is from to the second last element's index
                 # this is because after the second last element, it is the new minimum
                 # for all previous subarrays
-                left_length = index - stack[-1][0]
+                if stack:
+                    left_length = index - stack[-1][0]
+                else:
+                    left_length = index + 1
                 right_length = i - index
+
                 result += left_length*right_length*num
             stack.append((i, ele))
         return result % (10**9+7)
