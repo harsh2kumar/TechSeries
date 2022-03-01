@@ -3,7 +3,7 @@
 # Grokking
 # Leetcode https://leetcode.com/problems/sell-diminishing-valued-colored-balls/
 # Solution https://leetcode.com/problems/sell-diminishing-valued-colored-balls/solution/
-# Time Complexity O(N), as we'll go thorough the list of all balls at most once
+# Time Complexity O(N*logN), as we'll go thorough the list of all balls at most once and we sort the inventory array in descending order.
 # Space Complexity O(1)
 
 from typing import List
