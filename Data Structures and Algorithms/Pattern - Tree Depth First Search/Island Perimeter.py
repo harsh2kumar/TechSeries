@@ -3,7 +3,7 @@
 # Leetcode https://leetcode.com/problems/number-of-islands/
 # Solution https://leetcode.com/problems/number-of-islands/solution/
 # Time Complexity O(M×N) where M is the number of rows and N is the number of columns.
-# Space Complexity O(min(M,N)) because in worst case where the grid is filled with lands, the size of queue can grow up to min(M,N).
+# Space Complexity O(1). Only the result variable is updated and there is no other space requirement.
 
 
 from typing import List
