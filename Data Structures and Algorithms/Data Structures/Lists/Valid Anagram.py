@@ -1,8 +1,8 @@
 # Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 # An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 # Grokking
-# Leetcode https://leetcode.com/problems/contains-duplicate/
-# Solution https://leetcode.com/problems/contains-duplicate/solution/
+# Leetcode https://leetcode.com/problems/valid-anagram/
+# Solution https://leetcode.com/problems/valid-anagram/solution/
 # Time Complexity  O(n). We do contains() and add() for n times and each operation takes constant time.
 # Space Complexity O(n). The space used by a hash table is linear with the number of elements in it.
 
