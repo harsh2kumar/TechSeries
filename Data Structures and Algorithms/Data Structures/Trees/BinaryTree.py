@@ -2,9 +2,22 @@ from collections import deque
 from random import random
 
 
+class TreeNode:
+    def __init__(self, data):
+        if data is None:
+            data = 0
+        self.data = data
+        self.val = data
+        self.left = None
+        self.right = None
+
+
 class BinaryTreeNode:
     def __init__(self, data):
+        if data is None:
+            data = 0
         self.data = data
+        self.val = data
         self.left = None
         self.right = None
 
@@ -15,6 +28,8 @@ class BinaryTreeNode:
 
 
 def insert(root, d):
+    if d is None:
+        d = 0
     pNew = BinaryTreeNode(d)
     if root == None:
         return pNew
