@@ -12,13 +12,13 @@ from heapq import *
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
 
-        max_heap = [stone*-1 for stone in stones]
-        heapify(max_heap)
-        while len(max_heap) > 1:
-            stone_1, stone_2 = -heappop(max_heap), -heappop(max_heap)
+        stones = [stone*-1 for stone in stones]
+        heapify(stones)
+        while len(stones) > 1:
+            stone_1, stone_2 = -heappop(stones), -heappop(stones)
             if stone_1 > stone_2:
-                heappush(max_heap, -(stone_1-stone_2))
-        return -max_heap[0] if max_heap else 0
+                heappush(stones, -(stone_1-stone_2))
+        return -stones[0] if stones else 0
 
 
 sol = Solution()
